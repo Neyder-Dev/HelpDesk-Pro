@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+  font-family: "Fredoka", sans-serif;
+  margin: 0;
+  background: 
+    linear-gradient(to top, rgba(247, 100, 37, 1) -90%, rgba(0, 0, 0, 0.3)),
+    url('zaga3.jpeg');
+  /*background-image: url(Zaga3.jpeg);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header h2{
+  font-size: 40px;
+  
+}
+
+.title {
+  color: #fff;
+  margin-left: 15px;
+}
+
+header img {
+  height: 55px;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #fff;
+}
+
+#username,
+#password {
+  border: 2px solid #ff8c00;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+#username:focus,
+#password:focus {
+  border: 5px solid #ff8c00;
+  color: #fff;
+}
+
+#username:not(:focus),
+#password:not(:focus) {
+  background-color: transparent;
+}
+
+#username::placeholder,
+#password::placeholder {
+  color: #fff;
+}
+
+#boton1 {
+  border: 2px solid #ff8c00;
+  background-color: #ff8c00;
+  color: white;
+  height: 60px;
+  width: 120px;
+  border-radius: 5px;
+  margin: 10px 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#boton1:hover {
+  background-color: white;
+  color: #ff8c00;
+}
+
+footer {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header img {
+    height: 50px; /* Tamaño de logo reducido en móviles */
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #username,
+  #password {
+    width: 90%; /* Ajusta los campos al 90% del ancho de la pantalla */
+  }
+
+  #boton1 {
+    width: 90%; /* Botón más ancho en pantallas pequeñas */
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px; /* Texto más pequeño en el footer */
+  }
+}
+
+/* Estilos responsive para pantallas muy pequeñas (móviles antiguos) */
+@media (max-width: 480px) {
+  #username,
+  #password,
+  #boton1 {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  #boton1 {
+    height: 50px;
+  }
+
+  header {
+    padding: 5px;
+  }
+}
