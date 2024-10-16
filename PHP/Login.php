@@ -6,14 +6,14 @@
         $user =  $_POST['username'];
         $pass =  $_POST['password'];
 
-        $sql = "SELECT * FROM User WHERE UserEmail = ? AND UserPassword = ?";
+        $sql = "SELECT * FROM ItAnalyst WHERE ItEmail = ? AND ItPassword = ?";
         $stmt = $Conexion->prepare($sql);
         $stmt->bind_param("ss", $user, $pass);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
-            echo "Bienvenido!";
+            header('Location: /HelpDesk-Pro/HTML/Home.html');            exit;
         } else {
             // Error en login
             echo "Correo o contraseña incorrectos.";
