@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    height: 10%; /* Ajusta la altura del header */
+    background-color: #ff7f00; /* Color del header */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 24px;
+  }
+  
+  header span {
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    height: calc(100vh - 20% - 10%); /* Altura total menos la altura del header y del footer */
+    flex-direction: row;
+  }
+  
+  nav.left {
+    width: 15%;
+    background-color: #ff9562;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto; /* Agregar scroll si el contenido sobrepasa */
+  }
+  
+  nav.left li {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0; /* Reducir el padding para ahorrar espacio */
+    font-size: 18px; /* Ajustar el tamaño del texto */
+    list-style: none;
+    margin-left: -15px;
+  }
+  
+  nav.right {
+    margin-left: auto;
+    width: 15%;
+    background-color: #ff9562;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: auto; /* Agregar scroll si el contenido sobrepasa */
+  }
+  
+  nav.right li {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0; /* Reducir el padding */
+    font-size: 18px; /* Ajustar el tamaño del texto */
+    list-style: none;
+  }
+  
+  nav .left li span,
+  .right li span {
+    margin-right: 10px;
+    font-size: 28px; /* Ajustar el tamaño de los íconos */
+  }
+  
+  footer {
+    background-color: #ff7f00;
+    padding: 15px; /* Reducir el padding */
+    text-align: center;
+    color: #fff;
+    height: 8%; /* Reducir ligeramente la altura del footer */
+  }
+  
