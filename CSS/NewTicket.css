@@ -47,7 +47,7 @@ header img {
   color: #fff;
 }
 
-#form-nticket{
+#form-nticket {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,18 @@ header img {
   color: #fff;
 }
 
-#select_usuarios, #asunto-ticket {
+#form-consulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #fff;
+}
+
+#select_usuarios,
+#asunto-ticket,
+#id-ticket {
   border: 2px solid #ff8c00;
   outline: none;
   background-color: transparent;
@@ -69,11 +80,13 @@ header img {
   color: #fff;
 }
 
-#l-asunto, #l-descripcion{
+#l-asunto,
+#l-descripcion,
+#l-id-ticket {
   font-size: 18px;
 }
 
-#descripcion-ticket{
+#descripcion-ticket {
   border: 2px solid #ff8c00;
   outline: none;
   background-color: transparent;
@@ -87,7 +100,10 @@ header img {
   resize: none;
 }
 
-#select_usuarios::placeholder, #asunto-ticket::placeholder, #descripcion-ticket::placeholder{
+#select_usuarios::placeholder,
+#asunto-ticket::placeholder,
+#descripcion-ticket::placeholder,
+#id-ticket::placeholder {
   color: #c7c7c7;
 }
 
@@ -96,12 +112,14 @@ header img {
   color: #fff;
   font-size: 20px;
   margin-top: 80%;
-  bottom: 50px; /* Ajusta según la altura que prefieras */
+  bottom: 50px;
   right: 20px;
   position: absolute;
 }
 
-#btn-nticket{
+#btn-nticket,
+#btn-consulta,
+#btn-volver {
   border: 2px solid #ff8c00;
   background-color: #ff8c00;
   color: white;
@@ -114,13 +132,15 @@ header img {
   font-size: 20px;
 }
 
-#btn-nticket:hover {
+#btn-nticket:hover,
+#btn-consulta:hover
+#btn-volver {
   background-color: white;
   color: #ff8c00;
 }
 
 #boton1,
-#boton2 {
+#boton2{
   border: 2px solid #ff8c00;
   background-color: #ff8c00;
   color: white;
@@ -137,6 +157,32 @@ header img {
 #boton2:hover {
   background-color: white;
   color: #ff8c00;
+}
+
+#id1,
+#title1,
+#desc1,
+#sta1,
+#it1 {
+  color: #ff8c00; /* Color para los <p> */
+  font-size: 20px;
+}
+
+#r-id-ticket,
+#title-ticket,
+#description-ticket,
+#status-ticket,
+#it-ticket{
+  color: #fff;
+  display: inline-block; /* Cambia el comportamiento a inline-block */
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#description-ticket{
+  white-space: normal;
+  overflow-wrap: break-word;
+  width: 500px;
 }
 
 footer {

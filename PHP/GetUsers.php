@@ -1,7 +1,7 @@
 <?php
  include 'Conexion.php';
 
-$sql = "SELECT NombreUser FROM user;"; // Cambia "usuarios" por el nombre de tu tabla
+$sql = "SELECT * FROM user;"; 
 $result = $Conexion->query($sql);
 
 echo "<option value='' disabled selected>Selecciona</option>";
