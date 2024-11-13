@@ -1,0 +1,221 @@
+/* Estilos generales */
+body {
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffbec;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #ff8c00;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu {
+    list-style: none;
+    padding: 20;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu li span {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+.content, .Equipo-it, .Usuarios, .Tickets-Resueltos, .f-n-ticket, .f-n-It, .f-n-user, .f-e-It, .f-d-It, .f-e-user, .f-d-User, .f-e-ticket {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-ticket, .new-user {
+    background-color: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-ticket:hover,  .new-user:hover {
+    background-color: #2980b9;
+}
+
+.ticket-filters button,  .user-filters button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ticket-filters .overdue, .user-filters  .overdue {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.ticket-filters button:hover,  .user-filters button:hover {
+    background-color: #bdc3c7;
+}
+
+.ticket-table table, .teamIT table,  .userclass table, .ticket-r-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.ticket-table th, .ticket-table td, .teamIT th, .teamIT td, .userclass th,  .userclass td, .ticket-r-table th, .ticket-r-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-table th, .teamIT th, .userclass th, .ticket-r-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.ticket-table tr:hover, .teamIT tr:hover,  .userclass tr:hover,  .ticket-r-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.ticket-table td {
+    font-size: 14px;
+}
+
+#t-tickets tbody td a{
+    text-decoration: none;
+    color: #000;
+}
+
+#Form-n-ticket, #Form-n-It, #Form-n-User, #Form-e-It, #Form-d-It, #Form-e-User, #Form-d-User{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente */
+}
+
+#form-nticket label, #Form-n-It label, #Form-n-User label, #Form-d-It, #Form-e-It, #Form-e-User label, #Form-d-User label{
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 5px;
+    display: block; /* Asegura que las etiquetas queden encima */
+}
+
+#form-nticket select,
+#form-nticket textarea,
+#form-nticket input[type="text"],
+#Form-n-It input[type="text"], 
+#Form-n-It input[type="email"],
+#Form-n-It input[type="password"],
+#Form-n-User select,
+#Form-n-User input,
+#Form-e-It select,
+#Form-e-It input,
+#Form-d-It select,
+#Form-e-User input,
+#Form-e-User select,
+#Form-d-User select,
+#Form-e-ticket input,
+#Form-e-ticket select,
+#Form-e-ticket textarea{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+    align-items: center;
+}
+#form-nticket textarea, #Form-e-ticket textarea {
+height: 150px;
+}
+
+#form-nticket button, #Form-n-It button, #Form-n-User button, #Form-e-It button, #Form-d-It button, #Form-e-User button, #Form-d-User button{
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#Form-e-ticket button{
+    width: 35%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-d-it, #btn-d-user{
+    background-color: #e74c3c;
+    color: white;
+}
+
+#btn-nticket, #btn-n-it, #btn-n-user, #btn-e-it, #btn-e-User, #btn-e-Ticket{
+    background-color: #22c55e;
+    color: white;
+}
+
+#btn-volver, #btn-volver-it, #btn-volver-user, #btn-volver-it, #btn-volver-Ticket{
+    background-color: #bdc3c7;
+    color: #34495e;
+    margin-left: 4%;
+}
+
+#btn-nticket:hover, #btn-n-it:hover, #btn-n-user:hover {
+    background-color: #2980b9;
+}
+
+#btn-volver:hover,  #btn-volver-it:hover #btn-volver-user {
+    background-color: #95a5a6;
+}
+
+/* Flex para alinear botones uno al lado del otro */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

@@ -17,6 +17,7 @@ function consultarTicket() {
       document.getElementById("status-ticket").textContent =
         ticketData.NombreEstado;
       document.getElementById("it-ticket").textContent = ticketData.ItName;
+      
     }
   };
   xhr.send("id-ticket=" + ticketId);

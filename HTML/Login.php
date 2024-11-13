@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/HelpDesk-Pro/CSS/index.css" />
+    <link rel="stylesheet" href="/Help2/HelpDesk-Pro/CSS/Login.css" />
     <link rel="icon" href="https://zaga.dev/wp-content/uploads/2022/12/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192">
   </head>
   <body>
@@ -25,7 +25,7 @@
     </header>
     <main class="frente">
       <section class="login">
-        <form  action="../PHP/Login.php" method="post">
+        <form  action="../PHP/ValideLogin.php" method="post">
           <label for="username">Usuario:</label>
           <input type="email" id="username" name="username" placeholder="usuario@zagalabs.com" required />
           <br />
@@ -44,3 +44,5 @@
     </footer>
   </body>
 </html>
+
+
