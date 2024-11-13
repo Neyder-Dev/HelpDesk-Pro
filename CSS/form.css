@@ -1,0 +1,74 @@
+/* Estilos para el formulario en la página HelpDesk-Pro */
+.frente {
+    background-color: #f8f5e9; /* Fondo suave */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .frente h2 {
+    color: #ff6f00; /* Naranja para el título */
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .frente label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .frente input[type="text"],
+  .frente input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .frente input[type="text"]:focus,
+  .frente input[type="password"]:focus {
+    border-color: #ff6f00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 111, 0, 0.3);
+  }
+  
+  .frente .btn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .frente .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .frente p {
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .frente p a {
+    color: #ff6f00;
+    text-decoration: none;
+  }
+  
+  .frente p a:hover {
+    text-decoration: underline;
+  }
+  

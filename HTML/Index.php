@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="/Helpdesk-Pro/CSS/NewTicket.css" />
+  <link rel="stylesheet" href="/Help2/HelpDesk-Pro/CSS/Index.css" />
   <link
     rel="icon"
     href="https://zaga.dev/wp-content/uploads/2022/12/cropped-android-chrome-512x512-1-192x192.png"
@@ -29,7 +28,7 @@
       <button id="boton2" onclick="ConsultaTicket()">Consultar Ticket</button>
     </div>
     <div>
-      <form action="../PHP/EnviaTicket.php" method="post" id="form-nticket" style="display:none;">
+      <form action="../PHP/SendTickets.php" method="post" id="form-nticket" style="display:none;">
         <label for="username" id="l-username">Usuario:</label>
         <br>
         <select id="select_usuarios" name="usuario" required>
